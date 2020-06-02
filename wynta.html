@@ -1,0 +1,114 @@
+<!<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+	background: #35A9DB;
+	font-family: roboto;
+	text-align: center;
+}
+
+.a{
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.my {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.my:hover {background-color: #1BA691}
+.my:active {
+  background-color: #3e8e41;
+ .box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.myn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.myn:hover {background-color: #1BA691}
+.myn:active {
+  background-color: #3e8e41;
+ .box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+    <body>
+    
+      <title>Wynta Ku</title>
+         <div class="a">
+      <h1>Halo Sayang</h1>
+      <p>Mulai Klik dari awal ya</p>
+      <button class="my" onclick="my()">Klik Disini</button>
+      </div>
+      <br>
+       <p id="demo"><br /></p>
+       <br>
+       <div class="a">
+       <p>Kalau mau lanjut</p>
+        <button class="myn" onclick="myn()">Klik Disini</button>
+        </div> 
+        <br>
+       <p id="dem"><br /></p>
+       
+      <script>
+      function my() {
+      var txt;
+        alert('Halo Sayang')
+        
+        var w = prompt("Masukkan Nama Kamu");
+        var n = prompt("Masukkan Nama Pacar Kamu");
+          
+          if (w + n == null || w + n == "") {
+            txt = "Kamu Malas Mengisi Ya?" + "\xa0" + "Dasar.!";
+          } else {
+            txt = "Halo " + w + '\xa0'  + "dan " + n + "! Apa Kabar Kalian Hari ini? '\xa0 Semoga Langgeng Ya.!'";
+          }
+          document.getElementById("demo").innerHTML = txt;
+          }
+          
+          function myn() {
+      var txt;
+        alert('Apa Yang ingin Kamu Sampaikan?')
+        
+        var w = prompt("Masukkan PesanMu");
+        var n = prompt("Masukkan HarapanMu");
+          
+          if (w + n == null || w + n == "") {
+            txt = "Kamu Malas Mengisi Ya?" + "\xa0" + "Dasar.!";
+          } else {
+            txt = "\'Oke Kata-kata Mu akan aku Simpan.!\' => " + '\n' + w + '\xa0'  + "||\xa0 \'Dan harapan mu akan aku wujudkan\'  => "  + '\n' + n + '\xa0 || \xa0' +" Tolong Screenshot Dan kirim Ke no wa ini.! => \xa0 082351190701";
+          }
+          document.getElementById("dem").innerHTML = txt;
+          }
+      </script>
+    </body>
+  </head>
+</HTML>
